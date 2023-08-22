@@ -100,7 +100,7 @@ void insert_before(struct Node **head)
     if (pre_node == NULL)
     {
         temp->next = ptr1;
-        *head = ptr1;
+        *head = temp;
         return;
     }
     pre_node->next = temp;
